@@ -1,0 +1,41 @@
+def addItems():
+    item = str(input("Add items: "))
+    shoppingList.append(item)
+    print("Shopping List: " + str(shoppingList))
+
+def removeItems(): 
+    dismiss = str(input("Remove Items: "))
+    if dismiss in shoppingList:  
+        shoppingList.remove(dismiss) () not append()
+        print("Item removed!")
+    else:
+        print("Item not found in list!")
+    print("Shopping List: " + str(shoppingList))
+
+def showList():  
+    print("Shopping List: " + str(shoppingList))
+
+# Main menu
+print("Shopping List Manager")
+shoppingList = []
+
+while True:
+    print("\n--- Menu ---")
+    print("1 to add an item")
+    print("2 to remove an item")
+    print("3 to show shopping list")
+    print("4 to quit")
+
+    choice = input("Enter your choice: ")  
+    
+    if choice == "1":
+        addItems()
+    elif choice == "2":
+        removeItems()
+    elif choice == "3":
+        showList()
+    elif choice == "4":
+        print("Goodbye!")
+        break
+    else:
+        print("Invalid choice! Please try again.")

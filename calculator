@@ -1,0 +1,59 @@
+def add():
+    x = float(input("Enter first number: "))
+    y = float(input("Enter second number: "))
+    z = x + y
+    print("Result:", z)
+
+def subtract():
+    x = float(input("Enter first number: "))
+    y = float(input("Enter second number: "))
+    z = x - y
+    print("Result:", z)
+
+def divide():
+    x = float(input("Enter first number: "))
+    y = float(input("Enter second number: "))
+    if y != 0:
+        z = x / y
+        print("Result:", z)
+    else:
+        print("Error: Cannot divide by zero!")
+
+def multiply():
+    x = float(input("Enter first number: "))
+    y = float(input("Enter second number: "))
+    z = x * y
+    print("Result:", z)
+
+def exponent():
+    x = float(input("Enter base number: "))
+    y = float(input("Enter exponent: "))
+    z = x ** y
+    print("Result:", z)
+
+# Main program
+while True:
+    print("\n1. Add")
+    print("2. Subtract") 
+    print("3. Divide")
+    print("4. Multiply")
+    print("5. Exponent")
+    print("6. Exit")
+    
+    choice = input("Enter your choice (1-6): ")
+    
+    if choice == '1':
+        add()
+    elif choice == '2':
+        subtract()
+    elif choice == '3':
+        divide()
+    elif choice == '4':
+        multiply()
+    elif choice == '5':
+        exponent()
+    elif choice == '6':
+        print("Goodbye!")
+        break
+    else:
+        print("Invalid choice! Please try again.")

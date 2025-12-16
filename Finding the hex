@@ -1,0 +1,16 @@
+
+decimal_number = int(input("decimal number  "))
+hex_number = hex(decimal_number)
+print(hex_number)  
+while True:
+    user_input = input("Type 'exit' to stop, or enter a decimal number: ")
+    
+    if user_input.lower() == 'exit':
+        break  # Exit the loop
+
+    if user_input.isdigit():  # Check if input is a valid integer
+        decimal_number = int(user_input)
+        hex_number = hex(decimal_number)
+        print("Hexadecimal:", hex_number)
+    else:
+        print("Invalid input. Please enter a valid integer or 'exit'.")

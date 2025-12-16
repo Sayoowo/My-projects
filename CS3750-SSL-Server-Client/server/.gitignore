@@ -1,0 +1,10 @@
+*.class
+*.jks
+*.keystore
+*.truststore
+*.cer
+keyinfo.txt
+*.txt
+!README.txt
+.idea/
+.vscode/

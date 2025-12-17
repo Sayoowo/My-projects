@@ -1,0 +1,23 @@
+# Compiled files
+*.class
+
+# Generated keys (NEVER COMMIT!)
+*.key
+
+# Generated cipher files
+*.rsacipher
+*.aescipher
+*.khmac
+*.kmk
+
+# Output files
+decrypted_*.txt
+tst_*.txt
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
